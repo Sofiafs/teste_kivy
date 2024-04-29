@@ -1,10 +1,10 @@
 from kivy.app import App 
-from kivy.uix.slider import Slider
+from kivy.uix.togglebutton import ToggleButton
 
 class MinhaApp(App):
     def build(self):
-        return Slider(min=0, max=100, value=50) 
+        return ToggleButton(text='Ligado', state='normal')
     
 if __name__ == "__main__":
     MinhaApp().run()
-
+    
